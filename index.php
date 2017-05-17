@@ -31,18 +31,27 @@ if ($conn->query($sql) === TRUE) {
 
               <!--Select the Condiments -->
               Type:<br>
-              Cheese ($.50)<input type="radio" name="queso" value="1">
-              Extra Cheese ($1.00)<input type="radio" name="queso" value="2"> <br>
+              Cheese (FREE) <input type="radio" name="queso" value="1">
+              Extra Cheese ($.50)<input type="radio" name="queso" value="2"> <br><br>
 
-              Sauce:<br> <!chane the database to match the valus here or your code will explode>
-              Cheese (FREE) <input type="radio" name="sauce" value="1">
-              Tomato (FREE) <input type="radio" name="sauce" value="2">
-              Pesto (FREE) <input type="radio" name="sauce" value="2"> <br>
+              Sauce:<br>
+              Cheese (FREE) <input type="radio" name="sauce" value="13">
+              Tomato (FREE) <input type="radio" name="sauce" value="14">
+              Pesto (FREE) <input type="radio" name="sauce" value="15"> <br><br>
 
               Meat:<br>
-              Sausage <input type="checkbox" name="meat1" value="4">
-              Chicken <input type="checkbox" name="meat2" value="3">
-              Peporoni <input type="checkbox" name="meat3" value="5">
+              Sausage ($0.80)<input type="checkbox" name="meat1" value="4">
+              Chicken ($.75)<input type="checkbox" name="meat2" value="3">
+              Peporoni ($1.00)<input type="checkbox" name="meat3" value="5">
+              Ham ($1.50) <input type="checkbox" name="meat4" value="6">
+              Bacon ($1.30) <input type="checkbox" name="meat5" value="7">
+              Anchovies ($2.00) <input type="checkbox" name="meat6" value="8">  <br> <br>
+
+              Fruits and Veggies:<br>
+              Bell Peppers ($0.30) <input type="checkbox" name="vegg1" value="9">
+              Onions ($0.10) <input type="checkbox" name="vegg2" value="10">
+              Olives ($0.55) <input type="checkbox" name="vegg3" value="11">
+              Pineapple ($1.00) <input type="checkbox" name="vegg3" value="12"> <br>
 
 
 
