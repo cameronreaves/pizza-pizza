@@ -68,19 +68,51 @@ $phone = $_POST["phone"];
 
 
 //pizza information
-$conds = [$_POST["queso"]];  //make queso required
+$conds = array();
+
+array_push($conds,$_POST["queso"]);  //make queso required
+array_push($conds,$_POST["sauce"]);
 
 if (isset($_POST["meat1"])){
- $conds[] = $_POST["meat1"];
+ array_push($conds,$_POST["meat1"]);
 }
 
 if (isset($_POST["meat2"])){
- $conds[] = $_POST["meat2"];
+ array_push($conds,$_POST["meat2"]);
 }
 
 if (isset($_POST["meat3"])){
- $conds[] = $_POST["meat3"];
+ array_push($conds,$_POST["meat3"]);
 }
+
+if (isset($_POST["meat4"])){
+ array_push($conds,$_POST["meat4"]);
+}
+
+if (isset($_POST["meat5"])){
+ array_push($conds,$_POST["meat5"]);
+}
+
+if (isset($_POST["meat6"])){
+ array_push($conds,$_POST["meat6"]);
+}
+
+if (isset($_POST["vegg1"])){
+ array_push($conds,$_POST["vegg1"]);
+}
+
+if (isset($_POST["vegg2"])){
+ array_push($conds,$_POST["vegg2"]);
+}
+
+if (isset($_POST["vegg3"])){
+ array_push($conds,$_POST["vegg3"]);
+}
+
+if (isset($_POST["vegg4"])){
+ array_push($conds,$_POST["vegg4"]);
+}
+
 
 //echo $price;
       //gets the price of the pizza by getting the price of each condiment and totaling them
@@ -159,6 +191,7 @@ if (isset($_POST["meat3"])){
      {
        $cond_desc = getCondDesc($connect,$conds);
        $price = getPrice($conds,$connect);
+       $formatP = number_format($price, 2,'.', ',');
 
         echo "
         <h1>Your Order</h1>
@@ -171,7 +204,7 @@ if (isset($_POST["meat3"])){
         echo "<tr>
             <td> $fname $lname </td>
             <td> $cond_desc </td>
-            <td> $price </td>
+            <td> $"."$formatP </td>
         </tr> ";
      }
 
