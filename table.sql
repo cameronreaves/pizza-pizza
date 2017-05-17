@@ -183,8 +183,8 @@ INSERT INTO p_topping_categories
   VALUES
   ('Cheeses'),
   ('Meats'),
-  ('Vegetables'),
-  ('Fruits');
+  ('Fruits/Veggies'),
+  ('Sauce');
 
 INSERT INTO p_toppings
   (topping_category_id, topping_desc, topping_price)
@@ -192,15 +192,18 @@ INSERT INTO p_toppings
   (1, 'Regular Cheese', 0.00),
   (1, 'Extra Cheese', 0.50),
   (2, 'Chicken Breast', 0.75),
-  (2, 'Beef', 0.75),
-  (2,'Pepperoni',.5),
-  (3, 'Bell Peppers', 0.25),
-  (3, 'Onions', 0.25),
-  (3, 'Mushrooms', 0.25),
-  (3, 'Olives', 0.25),
-  (3, 'Spinach', 0.25),
-  (4, 'Tomatoes', 0.25),
-  (4, 'Pineapple', 0.50);
+  (2, 'Sausage', 0.80),
+  (2,'Pepperoni',1),
+  (2,'Ham',1.5),
+  (2,'Bacon',1.3),
+  (2,'Anchovies',1),
+  (3, 'Bell Peppers', 0.30),
+  (3, 'Onions', 0.10),
+  (3, 'Olives', 0.55),
+  (3, 'Pineapple', 0.50),
+  (4,'Cheese',0),
+  (4,'Tomato',0),
+  (4,'Pesto',0);
 
 INSERT INTO p_credit_card_types
   (credit_card_type_cd, credit_card_type_cd_desc)
