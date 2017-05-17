@@ -59,7 +59,7 @@
                 }
               }
   }
-    //displayPizzas($connect);
+    displayPizzas($connect);
 
   ?>
 </body>
